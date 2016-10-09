@@ -130,7 +130,6 @@ section {
   box-shadow: 1px 1px 4px #BDBDBA;
   border-top: 10px solid #FAD77B;
   border-bottom: 10px solid #CB654F;
-  z-index: 1;
 }
 
 /**
@@ -141,21 +140,33 @@ ul.tabs {
 }
 
 ul.tabs li {
+  position: relative;
   display: inline-block;
   width: 33.333%;
   height: 80px;
   line-height: 80px;
+  max-width: 250px;
   float: left;
   cursor: pointer;
   background: linear-gradient(165deg, transparent 29%, #CE9486 30%);
   text-align: center;
   border-bottom: 10px solid #FAD77B;
-  z-index: 2;
 }
 
 ul.tabs li.tabs-active {
   border-bottom: 10px solid #FAEFD1;
 }
+
+ul.tabs li.tabs-active:before {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 100%;
+  border-bottom: 70px solid rgba(0,0,0,.3);
+  border-right: 20px solid transparent;
+  z-index: 1;
+}
+
 ul.tabs li.tabs-active,
 ul.tabs li:hover {
   background: linear-gradient(165deg, transparent 29%, #FAEFD1 30%);
