@@ -125,7 +125,7 @@ header h2 {
  * Section styles.
  */
 section {
-  margin: 30px;
+  margin: 20px;
   background: #FAEFD1;
   box-shadow: 1px 1px 4px #BDBDBA;
   border-top: 10px solid #FAD77B;
@@ -170,5 +170,12 @@ ul.tabs li.tabs-active:before {
 ul.tabs li.tabs-active,
 ul.tabs li:hover {
   background: linear-gradient(165deg, transparent 29%, #FAEFD1 30%);
+}
 
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.tabs-content-active {
+  display: block;
 }
