@@ -60,10 +60,23 @@ h2 {
 }
 
 /**
+ * Utilities.
+ */
+.clearfix {
+  overflow: auto;
+}
+
+.content-block {
+  padding: 30px;
+}
+
+/**
  * Header styles.
  */
 header {
   position: relative;
+  width: 100%;
+  z-index: -1;
 }
 
 header h1, header h2, header h3 {
@@ -84,27 +97,27 @@ header h2 {
 .hero {
   background: url('../images/lighthouse-400x360.jpg') no-repeat top center / contain;
   width: 100%;
-  padding-bottom: 90%;
+  padding-bottom: 40%;
 }
 
 @media (min-width: 544px) {
   .hero {
     background-image: url('../images/lighthouse-600x360.jpg');
-    padding-bottom: 60%;
+    padding-bottom: 22%;
   }
 }
 
 @media (min-width: 768px) {
   .hero {
     background-image: url('../images/lighthouse-800x360.jpg');
-    padding-bottom: 45%;
+    padding-bottom: 16%;
   }
 }
 
 @media (min-width: 992px) {
   .hero {
     background-image: url('../images/lighthouse-1000x360.jpg');
-    padding-bottom: 36%;
+    padding-bottom: 13%;
   }
 }
 
@@ -113,9 +126,38 @@ header h2 {
  */
 section {
   margin: 30px;
-  padding: 30px;
   background: #FAEFD1;
   box-shadow: 1px 1px 4px #BDBDBA;
-  border-top: 7px solid #FAD77B;
-  border-bottom: 7px solid #CB654F;
+  border-top: 10px solid #FAD77B;
+  border-bottom: 10px solid #CB654F;
+  z-index: 1;
+}
+
+/**
+ * Horizontal tabs.
+ */
+ul.tabs {
+  margin-top: -90px;
+}
+
+ul.tabs li {
+  display: inline-block;
+  width: 33.333%;
+  height: 80px;
+  line-height: 80px;
+  float: left;
+  cursor: pointer;
+  background: linear-gradient(165deg, transparent 29%, #CE9486 30%);
+  text-align: center;
+  border-bottom: 10px solid #FAD77B;
+  z-index: 2;
+}
+
+ul.tabs li.tabs-active {
+  border-bottom: 10px solid #FAEFD1;
+}
+ul.tabs li.tabs-active,
+ul.tabs li:hover {
+  background: linear-gradient(165deg, transparent 29%, #FAEFD1 30%);
+
 }
