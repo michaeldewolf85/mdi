@@ -167,6 +167,10 @@ ul.tabs li.tabs-active:before {
   z-index: 1;
 }
 
+.tabs li.tabs-active:last-child:before {
+  border: 0;
+}
+
 ul.tabs li.tabs-active,
 ul.tabs li:hover {
   background: linear-gradient(165deg, transparent 29%, #FAEFD1 30%);
