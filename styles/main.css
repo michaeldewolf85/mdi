@@ -107,3 +107,15 @@ header h2 {
     padding-bottom: 36%;
   }
 }
+
+/**
+ * Section styles.
+ */
+section {
+  margin: 30px;
+  padding: 30px;
+  background: #FAEFD1;
+  box-shadow: 1px 1px 4px #BDBDBA;
+  border-top: 7px solid #FAD77B;
+  border-bottom: 7px solid #CB654F;
+}
