@@ -39,7 +39,7 @@ ol, ul {
 body {
   background: #85D4E3;
   font-family: 'Cabin', Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: #32292C;
 }
@@ -59,6 +59,16 @@ h2 {
   font-size: 37px;
 }
 
+h3 {
+  font-size: 26px;
+}
+
+strong {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #99B1B3;
+}
+
 /**
  * Utilities.
  */
@@ -68,6 +78,30 @@ h2 {
 
 .content-block {
   padding: 30px;
+}
+
+/**
+ * Grid system.
+ */
+.col-wrap {
+  overflow: auto;
+  width: 100%;
+}
+
+.col {
+  display: block;
+}
+
+@media (min-width: 544px) {
+  .col {
+    float: left;
+  }
+  .col-1 {
+    width: 10%;
+  }
+  .col-9 {
+    width: 90%;
+  }
 }
 
 /**
@@ -144,7 +178,7 @@ ul.tabs li {
   display: inline-block;
   width: 33.333%;
   height: 80px;
-  line-height: 80px;
+  line-height: 100px;
   max-width: 250px;
   float: left;
   cursor: pointer;
