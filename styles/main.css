@@ -211,7 +211,7 @@ section {
   max-width: 992px;
   background: #FAEFD1;
   box-shadow: 1px 1px 4px #BDBDBA;
-  border-top: 10px solid #FAD77B;
+  border-top: 10px solid #CB654F;
   border-bottom: 10px solid #CB654F;
 }
 
@@ -243,9 +243,9 @@ ul.tabs li {
   max-width: 130px;
   float: left;
   cursor: pointer;
-  background: linear-gradient(165deg, transparent 29%, #CE9486 30%);
+  background: linear-gradient(165deg, transparent 29%, #FAD77B 30%);
   text-align: center;
-  border-bottom: 10px solid #FAD77B;
+  border-bottom: 10px solid #CB654F;
 }
 
 ul.tabs li.tabs-active {
