@@ -159,7 +159,8 @@ header h2 {
  * Section styles.
  */
 section {
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 980px;
   background: #FAEFD1;
   box-shadow: 1px 1px 4px #BDBDBA;
   border-top: 10px solid #FAD77B;
@@ -179,7 +180,7 @@ ul.tabs li {
   width: 33.333%;
   height: 80px;
   line-height: 100px;
-  max-width: 250px;
+  max-width: 130px;
   float: left;
   cursor: pointer;
   background: linear-gradient(165deg, transparent 29%, #CE9486 30%);
