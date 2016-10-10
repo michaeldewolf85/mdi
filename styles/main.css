@@ -92,7 +92,7 @@ strong {
   display: block;
 }
 
-@media (min-width: 544px) {
+@media (min-width: 768px) {
   .col {
     float: left;
   }
@@ -112,6 +112,11 @@ header {
   width: 100%;
   z-index: -1;
 }
+@media (min-width: 544px) {
+  header {
+    margin-bottom: -40px;
+  }
+}
 
 header h1, header h2, header h3 {
   text-align: center;
@@ -128,6 +133,8 @@ header h2 {
   font-size: 1.5em;
 }
 
+
+
 .hero {
   background: url('../images/lighthouse-400x360.jpg') no-repeat top center / contain;
   width: 100%;
@@ -137,21 +144,21 @@ header h2 {
 @media (min-width: 544px) {
   .hero {
     background-image: url('../images/lighthouse-600x360.jpg');
-    padding-bottom: 22%;
+    padding-bottom: 26%;
   }
 }
 
 @media (min-width: 768px) {
   .hero {
     background-image: url('../images/lighthouse-800x360.jpg');
-    padding-bottom: 16%;
+    padding-bottom: 19%;
   }
 }
 
 @media (min-width: 992px) {
   .hero {
     background-image: url('../images/lighthouse-1000x360.jpg');
-    padding-bottom: 13%;
+    padding-bottom: 14%;
   }
 }
 
