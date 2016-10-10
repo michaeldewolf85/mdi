@@ -84,6 +84,16 @@ strong {
   padding: 30px;
 }
 
+img {
+  display: block;
+  width: 85%;
+  margin: auto;
+  height: auto;
+  border-radius: 50%;
+  border: 5px dotted #CB654F;
+  border-style: dotted double;
+}
+
 /**
  * Grid system.
  */
@@ -100,11 +110,14 @@ strong {
   .col {
     float: left;
   }
-  .col-1 {
-    width: 10%;
+  .col-2 {
+    width: 20%;
   }
-  .col-9 {
-    width: 90%;
+  .col-5 {
+    width: 50%;
+  }
+  .col-8 {
+    width: 80%;
   }
 }
 
