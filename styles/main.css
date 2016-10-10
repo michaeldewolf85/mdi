@@ -36,6 +36,10 @@ ol, ul {
 /**
  * Global styles.
  */
+html {
+  overflow-y: scroll;
+}
+
 body {
   background: #85D4E3;
   font-family: 'Cabin', Helvetica, Arial, sans-serif;
@@ -65,7 +69,7 @@ h3 {
 
 strong {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   color: #99B1B3;
 }
 
