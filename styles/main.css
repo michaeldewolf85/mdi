@@ -247,7 +247,6 @@ ul.tabs li {
   text-align: center;
   border-radius: 7px 7px 0 0;
   border-bottom: 10px solid #CB654F;
-  border-right: 1px solid rgba(0,0,0,.3);
 }
 
 ul.tabs li.tabs-active {
