@@ -231,21 +231,23 @@ section {
  * Horizontal tabs.
  */
 ul.tabs {
-  margin-top: -90px;
+  margin-top: -70px;
 }
 
 ul.tabs li {
   position: relative;
   display: inline-block;
   width: 33.333%;
-  height: 80px;
-  line-height: 100px;
+  height: 60px;
+  line-height: 60px;
   max-width: 130px;
   float: left;
   cursor: pointer;
-  background: linear-gradient(165deg, transparent 29%, #FAD77B 30%);
+  background: #FAD77B;
   text-align: center;
+  border-radius: 7px 7px 0 0;
   border-bottom: 10px solid #CB654F;
+  border-right: 1px solid rgba(0,0,0,.3);
 }
 
 ul.tabs li.tabs-active {
@@ -257,7 +259,7 @@ ul.tabs li.tabs-active:before {
   position: absolute;
   bottom: 0%;
   left: 100%;
-  border-bottom: 70px solid rgba(0,0,0,.3);
+  border-bottom: 60px solid rgba(0,0,0,.3);
   border-right: 20px solid transparent;
   z-index: 1;
 }
@@ -268,7 +270,7 @@ ul.tabs li.tabs-active:before {
 
 ul.tabs li.tabs-active,
 ul.tabs li:hover {
-  background: linear-gradient(165deg, transparent 29%, #FAEFD1 30%);
+  background: #FAEFD1;
 }
 
 .tabs-content {
