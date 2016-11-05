@@ -41,11 +41,11 @@ html {
 }
 
 body {
-  background: #85D4E3;
   font-family: 'Cabin', Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #32292C;
+  background: url('../images/20161015_203125.jpg') center top no-repeat;
 }
 
 /**
@@ -71,6 +71,11 @@ strong {
   text-transform: uppercase;
   font-size: 14px;
   color: #99B1B3;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 20px;
 }
 
 /**
@@ -177,28 +182,28 @@ header h2 {
 
 
 .hero {
-  background: url('../images/lighthouse-400x360.jpg') no-repeat top center / contain;
+  /*background: url('../images/lighthouse-400x360.png') no-repeat top center / contain;*/
   width: 100%;
   padding-bottom: 40%;
 }
 
 @media (min-width: 544px) {
   .hero {
-    background-image: url('../images/lighthouse-600x360.jpg');
+    /*background-image: url('../images/lighthouse-600x360.png');*/
     padding-bottom: 26%;
   }
 }
 
 @media (min-width: 768px) {
   .hero {
-    background-image: url('../images/lighthouse-800x360.jpg');
+    /*background-image: url('../images/lighthouse-800x360.png');*/
     padding-bottom: 19%;
   }
 }
 
 @media (min-width: 992px) {
   .hero {
-    background-image: url('../images/lighthouse-1000x360.jpg');
+    /*background-image: url('../images/lighthouse-1000x360.png');*/
     padding-bottom: 14%;
   }
 }
@@ -207,12 +212,10 @@ header h2 {
  * Section styles.
  */
 section {
-  margin: 30px auto;
+  margin: 10px;
   max-width: 992px;
-  background: #FAEFD1;
-  box-shadow: 1px 1px 4px #BDBDBA;
-  border-top: 10px solid #CB654F;
-  border-bottom: 10px solid #CB654F;
+  background: #FAF1DE;
+  border: 10px solid #32292C;
 }
 
 @media (min-width: 544px) {
@@ -230,9 +233,6 @@ section {
 /**
  * Horizontal tabs.
  */
-ul.tabs {
-  margin-top: -70px;
-}
 
 ul.tabs li {
   position: relative;
@@ -243,14 +243,14 @@ ul.tabs li {
   max-width: 130px;
   float: left;
   cursor: pointer;
-  background: #FAD77B;
+  background: #e6e6e6;
   text-align: center;
   border-radius: 7px 7px 0 0;
-  border-bottom: 10px solid #CB654F;
+  border-bottom: 5px solid #32292C;
 }
 
 ul.tabs li.tabs-active {
-  border-bottom: 10px solid #FAEFD1;
+  border-bottom: 10px solid #b3b3b3;
 }
 
 ul.tabs li.tabs-active:before {
@@ -269,7 +269,7 @@ ul.tabs li.tabs-active:before {
 
 ul.tabs li.tabs-active,
 ul.tabs li:hover {
-  background: #FAEFD1;
+  background: #b3b3b3;
 }
 
 .tabs-content {
