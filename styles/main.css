@@ -66,6 +66,29 @@ body {
   }
 }
 
+/**
+ * Fonts.
+ */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url('../fonts/Cabin/Cabin-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cabin Bold'), local('Cabin-Bold'), url('../fonts/Cabin/Cabin-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url(../fonts/Lobster/Lobster-Regular.ttf) format('opentype');
+}
 
 /**
  * Typeface styles.
