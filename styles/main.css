@@ -1,0 +1,344 @@
+/**
+ * @file
+ * CSS for Michelle and Mike's wedding website.
+ */
+
+/**
+ * HTML reset
+ * @see http://meyerweb.com/eric/tools/css/reset/ 
+ *   
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/**
+ * Global styles.
+ */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #32292C;
+  background: url('../images/southwest-harbor-maine-coast-544.jpg') no-repeat center center fixed / cover;
+}
+
+@media (min-width: 544px) {
+  body {
+    background-image: url('../images/southwest-harbor-maine-coast-768.jpg');
+  }
+}
+ 
+@media (min-width: 768px) {
+  body {
+    background-image: url('../images/southwest-harbor-maine-coast-992.jpg');
+  }
+}
+ 
+@media (min-width: 992px) {
+  body {
+    background-image: url('../images/southwest-harbor-maine-coast.jpg');
+  }
+}
+
+/**
+ * Fonts.
+ */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url('../fonts/Cabin/Cabin-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cabin Bold'), local('Cabin-Bold'), url('../fonts/Cabin/Cabin-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url(../fonts/Lobster/Lobster-Regular.ttf) format('opentype');
+}
+
+/**
+ * Typeface styles.
+ */
+h1, h2, h3 {
+  font-family: 'Lobster', Georgia, Times, serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 37px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+ol, p {
+  padding-bottom: 15px;
+}
+
+strong {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #99B1B3;
+}
+
+small {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+ol {
+  list-style: decimal;
+  padding-left: 30px;
+}
+
+p.address {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 2px dotted #CB654F;
+}
+
+p.address:last-child {
+  border: 0;
+}
+
+a {
+  color: #01ABE9;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+/**
+ * Utilities.
+ */
+.clearfix {
+  overflow: auto;
+}
+
+.content-block {
+  padding: 30px;
+}
+
+img {
+  display: block;
+  width: 85%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px dotted #CB654F;
+  border-style: dotted double;
+}
+
+.frame-wrapper, img {
+  margin: 0 auto 30px auto;
+}
+
+.frame-wrapper {
+  position: relative;
+  padding-bottom: 85%;
+  max-width: 400px;
+  border: 5px double #CB654F;
+  border-radius: 5px;
+}
+
+@media (min-width: 544px) {
+  .frame-wrapper {
+    margin: 0 30px 30px 30px;
+  }
+}
+
+.frame-wrapper iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Grid system.
+ */
+.col-wrap {
+  overflow: auto;
+  width: 100%;
+}
+
+.col {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .col {
+    float: left;
+  }
+  .col.col-inverted {
+    float: right;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.67%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.67%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.67%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.67%;
+  }
+}
+
+/**
+ * Header styles.
+ */
+header {
+  margin-bottom: 60px;
+}
+
+header h1, header h2, header h3 {
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: rgba(0, 0, 0, .6) 6px 6px 6px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  padding-top: 3%;
+}
+
+header h2 {
+  font-size: 1.5em;
+}
+
+/**
+ * Section styles.
+ */
+section {
+  margin: 10px;
+  max-width: 992px;
+  background: rgba(250, 241, 222, 0.9);
+}
+
+@media (min-width: 544px) {
+  section {
+    margin: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    margin: 30px auto;
+  }
+}
+
+section h3 {
+  line-height: 1;
+}
+
+/**
+ * Horizontal tabs.
+ */
+
+ul.tabs li {
+  position: relative;
+  display: inline-block;
+  width: 33.333%;
+  height: 60px;
+  line-height: 60px;
+  max-width: 130px;
+  float: left;
+  cursor: pointer;
+  background: #b3b3b3;
+  text-align: center;
+}
+
+@media (min-width: 544px) {
+  ul.tabs li:last-child {
+    border-right: 2px dotted #b3b3b3;
+  }
+}
+
+ul.tabs li.tabs-active:before {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 100%;
+  border-bottom: 60px solid rgba(0,0,0,.3);
+  border-right: 20px solid transparent;
+  z-index: 1;
+}
+
+.tabs li.tabs-active:last-child:before {
+  border: 0;
+}
+
+ul.tabs li.tabs-active,
+ul.tabs li:hover {
+  background: none;
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.tabs-content-active {
+  display: block;
+}
