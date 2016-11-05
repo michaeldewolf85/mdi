@@ -211,6 +211,10 @@ ul.tabs li {
   text-align: center;
 }
 
+ul.tabs li:last-child {
+  border-right: 2px dotted #b3b3b3;
+}
+
 ul.tabs li.tabs-active:before {
   content: '';
   position: absolute;
