@@ -107,17 +107,19 @@ p.address:last-child {
 img {
   display: block;
   width: 85%;
-  margin: auto;
   height: auto;
   border-radius: 50%;
   border: 5px dotted #CB654F;
   border-style: dotted double;
 }
 
+.frame-wrapper, img {
+  margin: 0 auto 30px auto;
+}
+
 .frame-wrapper {
   position: relative;
   padding-bottom: 92%;
-  margin: auto;
   max-width: 400px;
   border: 5px double #32292C;
   border-radius: 5px;
@@ -125,7 +127,7 @@ img {
 
 @media (min-width: 544px) {
   .frame-wrapper {
-    margin: 30px;
+    margin: 0 30px 30px 30px;
   }
 }
 
