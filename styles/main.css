@@ -179,7 +179,8 @@ header h2 {
 section {
   margin: 10px;
   max-width: 992px;
-  background: #FAF1DE;
+  background: #e6e6e6;
+  opacity: 0.9;
   border: 10px solid #32292C;
 }
 
@@ -208,14 +209,8 @@ ul.tabs li {
   max-width: 130px;
   float: left;
   cursor: pointer;
-  background: #e6e6e6;
+  background: #b3b3b3;
   text-align: center;
-  border-radius: 7px 7px 0 0;
-  border-bottom: 5px solid #32292C;
-}
-
-ul.tabs li.tabs-active {
-  border-bottom: 10px solid #b3b3b3;
 }
 
 ul.tabs li.tabs-active:before {
@@ -234,7 +229,7 @@ ul.tabs li.tabs-active:before {
 
 ul.tabs li.tabs-active,
 ul.tabs li:hover {
-  background: #b3b3b3;
+  background: #e6e6e6;
 }
 
 .tabs-content {
