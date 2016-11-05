@@ -77,6 +77,11 @@ strong {
   color: #99B1B3;
 }
 
+small {
+  font-size: 14px;
+  font-weight: normal;
+}
+
 ol {
   list-style: decimal;
   padding-left: 30px;
@@ -91,6 +96,12 @@ p.address {
 
 p.address:last-child {
   border: 0;
+}
+
+a {
+  color: #01ABE9;
+  text-transform: lowercase;
+  text-decoration: none;
 }
 
 /**
@@ -119,9 +130,9 @@ img {
 
 .frame-wrapper {
   position: relative;
-  padding-bottom: 92%;
+  padding-bottom: 85%;
   max-width: 400px;
-  border: 5px double #32292C;
+  border: 5px double #CB654F;
   border-radius: 5px;
 }
 
