@@ -154,8 +154,7 @@ img {
  * Header styles.
  */
 header {
-  position: relative;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 header h1, header h2, header h3 {
@@ -210,9 +209,10 @@ ul.tabs li {
   background: #b3b3b3;
   text-align: center;
 }
-
-ul.tabs li:last-child {
-  border-right: 2px dotted #b3b3b3;
+@media (min-width: 544px) {
+  ul.tabs li:last-child {
+    border-right: 2px dotted #b3b3b3;
+  }
 }
 
 ul.tabs li.tabs-active:before {
