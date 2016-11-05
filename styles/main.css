@@ -99,12 +99,22 @@ img {
   border-style: dotted double;
 }
 
-.video-container {
+.frame-wrapper {
   position: relative;
-  padding-bottom: 100%;
+  padding-bottom: 92%;
+  margin: auto;
+  max-width: 400px;
+  border: 5px double #32292C;
+  border-radius: 5px;
 }
 
-.video-container iframe {
+@media (min-width: 544px) {
+  .frame-wrapper {
+    margin: 30px;
+  }
+}
+
+.frame-wrapper iframe {
   position: absolute;
   top:0;
   left: 0;
@@ -222,6 +232,7 @@ ul.tabs li {
   background: #b3b3b3;
   text-align: center;
 }
+
 @media (min-width: 544px) {
   ul.tabs li:last-child {
     border-right: 2px dotted #b3b3b3;
