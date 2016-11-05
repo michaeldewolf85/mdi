@@ -179,9 +179,7 @@ header h2 {
 section {
   margin: 10px;
   max-width: 992px;
-  background: #e6e6e6;
-  opacity: 0.9;
-  border: 10px solid #32292C;
+  background: rgba(250, 241, 222, 0.9);
 }
 
 @media (min-width: 544px) {
@@ -229,7 +227,7 @@ ul.tabs li.tabs-active:before {
 
 ul.tabs li.tabs-active,
 ul.tabs li:hover {
-  background: #e6e6e6;
+  background: none;
 }
 
 .tabs-content {
