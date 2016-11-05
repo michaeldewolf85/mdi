@@ -166,6 +166,9 @@ img {
   .col {
     float: left;
   }
+  .col.col-inverted {
+    float: right;
+  }
   .col-1 {
     width: 8.33%;
   }
