@@ -4,6 +4,7 @@
     <title>Michelle & Mike 2017 Wedding</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Michelle McKinney & Mike DeWolf are getting married in Southwest Harbor Maine! This is their official wedding website." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.min.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
@@ -11,66 +12,63 @@
     <script src="scripts/main.min.js"></script>
   </head>
   <body>
-    <header>
+    <header class="animated zoomIn">
       <h1>Michelle & Mike</h1>
       <h2>August 26, 2017</h2>
       <h2>Southwest Harbor, ME</h2>
     </header>
     <main>
       <section>
-        <ul class="tabs clearfix">
+        <ul class="tabs clearfix animated zoomIn">
           <li data-option="0" class="tabs-active"><span>Info</span></li>
           <li data-option="1"><span>Location</span></li>
           <li data-option="2"><span>About</span></li>
+          <li data-option="3"><span>Registry</span></li>
         </ul>
-        <div class="content-block">
+        <div class="content-block animated slideInUp"">
           <div class="tabs-content tabs-content-active">
             <div class="col-wrap">
               <div class="col col-6">
-                <img src="images/michelle-mike-southwest-harbor-maine.jpg" />
+                <div class="img-wrapper">
+                  <img src="images/michelle-mike-front.jpg" />
+                </div>
               </div>
               <div class="col col-6">
-                <div class="col-wrap">
-                  <div class="col col-3">
-                    <h3>What</h3>
-                  </div>
-                  <div class="col col-9">
-                    <p>Michelle & Mike are getting married! Please join us in beautiful Southwest Harbor Maine next summer for the event.</p>
-                  </div>
-                </div>
-                <div class="col-wrap">
-                  <div class="col col-3">
-                    <h3>Who</h3>
-                  </div>
-                  <div class="col col-9">
-                    <p>Michelle & Mike first met 12 years ago working together at Walgreens. They stayed together through their and 20s and now they're getting married!</p>
-                  </div>
-                </div>
-                <div class="col-wrap">
-                  <div class="col col-3">
-                    <h3>When</h3>
-                  </div>
-                  <div class="col col-9">
-                    <p>August 26, 2017, 4pm</p>
-                  </div>
-                </div>
-                <div class="col-wrap">
-                  <div class="col col-3">
-                    <h3>Where</h3>
-                  </div>
-                  <div class="col col-9">
-                    <div>
-                      <strong>Ceremony</strong>
-                      <p class="address">Charlotte Rhoades Park <small>( <a href="http://www.rhoadesbutterflygarden.org" target="_blank">Website</a></small> )<br />185 Main St<br />Southwest Harbor, ME 04679</p>
+                <div class="text-col">
+                  <div class="col-wrap">
+                    <div class="col col-3">
+                      <h3>What</h3>
                     </div>
-                    <div>
-                      <strong>Reception</strong>
-                      <p class="address">Causeway Club <small>( <a href="http://www.thecausewayclub.org" target="_blank">Website</a> )</small><br />10 Fernald Point Rd<br />Southwest Harbor, ME 04679</p>
+                    <div class="col col-9">
+                      <p>Michelle & Mike are getting married! Please join us in beautiful Southwest Harbor Maine next summer for the event.</p>
+                    </div>
+                  </div>
+                  <div class="col-wrap">
+                    <div class="col col-3">
+                      <h3>When</h3>
+                    </div>
+                    <div class="col col-9">
+                      <p>August 26, 2017, 4:00pm</p>
+                    </div>
+                  </div>
+                  <div class="col-wrap">
+                    <div class="col col-3">
+                      <h3>Where</h3>
+                    </div>
+                    <div class="col col-9">
+                      <div>
+                        <strong>Ceremony</strong>
+                        <p class="address">Charlotte Rhoades Park<br />185 Main St<br />Southwest Harbor, ME 04679<br /><small>( <a href="http://www.rhoadesbutterflygarden.org" target="_blank">Website</a></small> )</p>
+                      </div>
+                      <div>
+                        <strong>Reception</strong>
+                        <p class="address">The Barn at Causeway Club<br />10 Fernald Point Rd<br />Southwest Harbor, ME 04679<br /><small>( <a href="http://www.thecausewayclub.org" target="_blank">Website</a> )</small></p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div> <!-- Col wrap -->
+              </div> <!-- Col wrap -->
+            </div>
           </div>
           <div class="tabs-content">
             <div class="col-wrap">
@@ -81,63 +79,106 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJSmiDrKjrkwR5lBT-
                 </div>
               </div>
               <div class="col col-6">
-                <div class="col-wrap">
-                  <div class="col col-3">
-                    <h3>Directions</h3>
-                  </div>
-                  <div class="col col-9">
-                    <strong>From Boston area</strong>
-                    <ol>
-                      <li>Follow I-95 N, I-295 N and I-95 N to US-1A E/Wilson St in Brewer. Take exit 6A from I-395 E.</li>
-                      <li>Follow US-1A E, ME-3 E/Bar Harbor Rd and ME-102 S to Clark Point Rd in Southwest Harbor.</li>
-                      <li>You have arrived.</li>
-                    </ol>
+                <div class="text-col">
+                  <div class="col-wrap">
+                    <div class="col col-3">
+                      <h3>Directions</h3>
+                    </div>
+                    <div class="col col-9">
+                      <strong>By Car (4.5 hours from Boston)</strong>
+                      <ol>
+                        <li>Follow I-95 N, I-295 N and I-95 N to US-1A E/Wilson St in Brewer. Take exit 6A from I-395 E.</li>
+                        <li>Follow US-1A E, ME-3 E/Bar Harbor Rd and ME-102 S to Clark Point Rd in Southwest Harbor.</li>
+                      </ol>
+                      <strong>By Plane (1 hour from Boston)</strong>
+                      <ol>
+                        <li>From Logan take Cape Air flight to Bar Harbor Airport. Car Rentals are available.</li>
+                        <li>Southwest Harbor is 20 minutes away.</li>
+                      </ol>
+                    </div>
                   </div>
                 </div>                  
               </div>
             </div> <!-- Col wrap -->
             <div class="col-wrap">
               <div class="col col-6">
-                <div class="col-wrap">
-                  <div class="col col-3">
-                    <h3>Staying</h3>
-                  </div>
-                  <div class="col col-9">
-                    <p>There are many wonderful options in and around Southwest Harbor. Here are a few suggestions:</p>
-                    <strong>Southwest Harbor (in town)</strong>
-                    <p class="address">Drydock Inn <small>( <a href="http://www.cafedrydockinn.com" target="_blank">Website</a> )</small><br />357 Main St<br />Southwest Harbor, ME 04679</p>
-                    <p class="address">Moorings Inn Waterfront <small>( <a href="http://www.mooringsinn.com" target="_blank">Website</a> )</small><br />133 Shore Rd<br />Southwest Harbor, ME 04679</p>
-                    <strong>Bar Harbor (30 minutes away)</strong>
-                    <p class="address">Bar Harbor Inn <small>( <a href="http://barharborinn.com" target="_blank">Website</a> )</small><br />1 Newport Dr<br />Bar Harbor, ME 04609</p>
-                    <p class="address">Bar Harbor Grand Hotel <small>( <a href="http://barharborgrand.com" target="_blank">Website</a> )</small><br />269 Main St<br />Bar Harbor, ME 04609</p>
+                <div class="text-col">
+                  <div class="col-wrap">
+                    <div class="col col-3">
+                      <h3>Places to stay</h3>
+                    </div>
+                    <div class="col col-9">
+                      <p>There are many wonderful options in and around Southwest Harbor. Here are a few suggestions:</p>
+                      <strong>Southwest Harbor (in town)</strong>
+                      <p class="address">Drydock Inn<br />357 Main St<br />Southwest Harbor, ME 04679<br /><small>( <a href="http://www.cafedrydockinn.com" target="_blank">Website</a> )</small></p>
+                      <p class="address">Moorings Inn Waterfront<br />133 Shore Rd<br />Southwest Harbor, ME 04679<br /><small>( <a href="http://www.mooringsinn.com" target="_blank">Website</a> )</small></p>
+                      <p class="address">Seawall Motel<br />566 Seawall Rd (Rt. 102A)<br />Southwest Harbor, ME 04679<br /><small>( <a href="http://seawallmotel.com" target="_blank">Website</a> )</small></p>
+                      <strong>Bar Harbor (30 minutes away)</strong>
+                      <p class="address">Bar Harbor Inn<br />1 Newport Dr<br />Bar Harbor, ME 04609<br /> <small>( <a href="http://barharborinn.com" target="_blank">Website</a> )</small></p>
+                      <p class="address">Bar Harbor Grand Hotel<br />269 Main St<br />Bar Harbor, ME 04609<br /><small>( <a href="http://barharborgrand.com" target="_blank">Website</a> )</small></p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col col-6">
-                <div class="col-wrap">
-                  <div class="col col-3">
-                    <h3>Join us!</h3>
+                <div class="text-col">
+                  <div class="col-wrap">
+                    <div class="col col-3">
+                      <h3>Join us!</h3>
+                    </div>
+                    <div class="col col-9">
+                      <p>We encourage you to stay the night, or better yet the whole weekend! On Friday, Aug 25 there will be a casual dinner for the bridal party and guests arriving early.</p>
+                      <p>Details to follow...</p>
+                    </div>
                   </div>
-                  <div class="col col-9">
-                    <p>We encourage you to stay the night, or even the whole weekend! We will be taking an afternoon walk in Acadia on Friday, Aug 25 and will be hosting a pizza dinner in the evening for guests arriving early.</p>
-                    <p>Walk leaves at 3pm. Dinner is at 6pm.</p>
-                    <p class="address">Monson Rock House <br />269 Main St<br />Bar Harbor, ME 04609</p>
-                  </div>
-                </div>                    
+                </div>
+                <div class="seawall-motel img-wrapper">
+                  <img src="images/moorings-inn.jpg" />
+                </div>                  
               </div>
             </div> <!-- Col wrap -->
           </div>
           <div class="tabs-content">
             <div class="col-wrap">
               <div class="col col-6">
-                <img src="images/acadia-coast-maine.jpg" />
+                <div class="img-wrapper">
+                  <img src="images/mike-michelle-reggie.jpg" />
+                </div>
               </div>
               <div class="col col-6">
-                <h3>About us</h3>
-                <p>Michell & Mike first met while working at Walgreens during High School. They stayed together throughout their twenties. Last fall, on Michelle's birthday, Mike got down on one knee and popped the question. They live together with their Dog Reggie in Arlington, MA.</p>
-                <h3>Mount Desert Island</h3>
-                <p>When Michelle & Mike first started dating, they went on a vacation to Mount Desert Island in Maine. Named by a French explorer "Ile de Monts Deserts", literally "island of the bare mountains", it is a panoply of fantastic mountain vistas and enchanting rocky coastlines.</p>
-                <p>For much of the 19th century Mount Desert Island served as a summer retreat for some of the most prominent people of the time. These included Rockefellers, Morgans, Fords, Vanderbilts, Carnegies, and Astors.</p>
+                <div class="text-col">
+                  <div class="col-wrap">
+                    <div class="col col-3">
+                      <h3>About Us</h3>
+                    </div>
+                    <div class="col col-9">
+                      <p>Michelle & Mike first met 12 years ago and have been together ever since! They love gardening together, cooking and spending time with their little dog Reggie. Last fall, on Michelle's birthday, Mike got down on one knee and popped the question.</p>
+                      <p>Over the years Michelle & Mike have loved going on trips together up the Maine coast, and Mount Desert Island has always been a special place for them.</p>
+                    </div>
+                  </div>
+                  <div class="col-wrap">
+                    <div class="col col-3">
+                      <h3>About Mount Desert Island</h3>
+                    </div>
+                    <div class="col col-9">
+                      <p>Home to Acadia National Park, Mount Desert Island features spectacular natural scenery. There are many things to do including Hiking & Biking in Acadia, Astronomy & Stargazing, Birdwatching, Photography, Shopping and Restaurants.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Col wrap -->
+          </div>
+          <div class="tabs-content">
+            <div class="col-wrap">
+              <div class="col col-6">
+                <div class="img-wrapper">
+                  <img src="images/butterfly-park.jpg" />
+                </div>
+              </div>
+              <div class="col col-6">
+                <div class="text-col">
+                  <p>Michelle & Mike are registered at Bed, Bath & Beyond.</p>
+                </div>
               </div>
             </div> <!-- Col wrap -->
           </div>
