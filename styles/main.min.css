@@ -45,7 +45,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: black;
-  background: url('../images/southwest-harbor-maine-coast-544.jpg') no-repeat center top fixed / cover;
+  background: url('../images/southwest-harbor-maine-coast-544.jpg') no-repeat center top;
 }
 
 @media (min-width: 544px) {
