@@ -45,7 +45,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: black;
-  background: url('../images/southwest-harbor-maine-coast-544.jpg') no-repeat center center fixed / cover;
+  background: url('../images/southwest-harbor-maine-coast-544.jpg') no-repeat center top fixed / cover;
 }
 
 @media (min-width: 544px) {
@@ -328,10 +328,19 @@ ul.tabs li {
   border-radius: 15px;
 }
 
+ul.tabs li.tabs-active {
+  background-color: rgba(175, 39, 10, 0.8);
+}
+
 ul.tabs li span {
   display: block;
   border: 4px dotted white;
   border-radius: 10px;
+}
+
+ul.tabs li.tabs-active span {
+  color: #FFD56D;
+  border-color: #FFD56D;
 }
 
 .tabs-content {
