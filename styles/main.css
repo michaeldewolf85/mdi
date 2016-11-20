@@ -45,12 +45,12 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: black;
-  background: #324951 url('../images/southwest-harbor-maine-coast-544.jpg') no-repeat center top;
+  background: #324951 url('../images/southwest-harbor-maine-coast-544.jpg?ver=1479603243') no-repeat center top;
 }
 
 @media (min-width: 544px) {
   body {
-    background-image: url('../images/southwest-harbor-maine-coast-768.jpg');
+    background-image: url('../images/southwest-harbor-maine-coast-768.jpg?ver=1479603243');
     background-size: cover;
     background-attachment: fixed;
   }
@@ -58,13 +58,13 @@ body {
  
 @media (min-width: 768px) {
   body {
-    background-image: url('../images/southwest-harbor-maine-coast-992.jpg');
+    background-image: url('../images/southwest-harbor-maine-coast-992.jpg?ver=1479603243');
   }
 }
  
 @media (min-width: 992px) {
   body {
-    background-image: url('../images/southwest-harbor-maine-coast.jpg');
+    background-image: url('../images/southwest-harbor-maine-coast.jpg?ver=1479603243');
   }
 }
 
