@@ -51,6 +51,8 @@ body {
 @media (min-width: 544px) {
   body {
     background-image: url('../images/southwest-harbor-maine-coast-768.jpg');
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
  
