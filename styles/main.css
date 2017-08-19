@@ -314,6 +314,7 @@ ul.tabs {
   text-align: center;
 }
 
+p.highlight,
 ul.tabs li {
   position: relative;
   display: inline-block;
@@ -351,4 +352,14 @@ ul.tabs li.tabs-active span {
 
 .tabs-content.tabs-content-active {
   display: block;
+}
+
+p.highlight {
+  width: 95%;
+  display: block;
+  height: auto;
+  max-width: none;
+  line-height: inherit;
+  border-radius: 5px;
+  margin: 10px auto;
 }
